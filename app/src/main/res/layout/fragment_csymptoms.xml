@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentCSymptoms">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Symptoms Checker"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@color/colorBackground"
+                android:padding="5dp"
+                android:textColor="#fff"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/txtName"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:padding="7dp"
+                android:hint="Your Name"
+                android:textAlignment="center"
+                android:background="@drawable/custom_textbox"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@color/colorBackground"
+                android:padding="5dp"
+                android:textColor="#fff"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbGroup"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbMale"
+                    android:textSize="20dp"
+                    android:text="Male"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbFemale"
+                    android:textSize="20dp"
+                    android:text="Female"
+                    android:layout_marginLeft="20dp"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age Group"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@color/colorBackground"
+                android:padding="5dp"
+                android:textColor="#fff"/>
+
+            <!--Options-->
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spAgeGroup" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Symptom"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:background="@color/colorBackground"
+                android:padding="5dp"
+                android:textColor="#fff"/>
+
+            <!--Options-->
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spSymptoms" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:id="@+id/btnCheck"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_button"
+                android:text="Check"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtResult"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNavigation">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:src="@drawable/bmax"
+        android:id="@+id/imgLogo"
+        />
+
+    <TextView
+        android:id="@+id/lblHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgLogo"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="Health Assistant"
+        android:gravity="center"
+        android:padding="20dp"
+        />
+
+
+</RelativeLayout>

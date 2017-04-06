@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorBackground"
+tools:context=".FragmentAboutUs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="208dp"
+            android:layout_height="116dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bmax"
+            android:id="@+id/imgLogo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deleloped By"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/imgLogo"
+            android:id="@+id/lblTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bMAX Group Members"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblTitle"
+            android:id="@+id/lblMTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manish Acharya (14/BCT/069)"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblMTitle"
+            android:id="@+id/lblManish"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sagar Chamling (23/BCT/069)"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblManish"
+            android:id="@+id/lblSagar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ushmita Tuladhar (40/BCT/069)"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/lblSagar"
+            android:id="@+id/lblUshmita"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
